@@ -1,0 +1,25 @@
+RMI
+File Transfer using Java RMI
+
+A file sharing System is built using RMI. This system contains three entities : Controller, ClientA and Client B. 
+The Client A is able to send the files to ClientB, 
+
+1. Compile all the 4 classes
+	javac *.java
+	
+2. Run the controller.java (as server for ClientA and ClientB)
+	java Controller.java
+	
+3. Run the ClientB.java (as server)
+	java ClientB.java start 
+	
+0. set the ClientB location (local host and port no) to your environment variables //tentative might changed
+	set SERVER_PORT = 127.0.0.1:<portno>
+	//NOT USED
+	
+4. Run the ClientA (sender)
+	java ClientA.java send <clientapath> <filenameccopy>
+	clientbpath /home/shieryntjandra/FileReceived
+	//not used
+	
+	ClientA and Controller will be in one machine
